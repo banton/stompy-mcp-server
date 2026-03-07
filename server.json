@@ -1,0 +1,69 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "ai.stompy/stompy",
+  "title": "Stompy – AI Memory for Claude & MCP Agents",
+  "description": "Persistent memory system that prevents context loss between AI sessions. Store, search, and recall project knowledge across conversations. Features semantic search, conflict detection, ticket management, and document ingestion. Works with Claude Desktop, VS Code, Cursor, and any MCP-compatible client.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/banton/stompy-mcp-server",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.stompy.ai",
+      "authentication": {
+        "type": "oauth2"
+      }
+    }
+  ],
+  "tools": [
+    {
+      "name": "lock_context",
+      "description": "Store content as immutable versioned snapshot for persistent memory"
+    },
+    {
+      "name": "recall_context",
+      "description": "Retrieve locked context by topic"
+    },
+    {
+      "name": "context_search",
+      "description": "Hybrid semantic + keyword search over project contexts"
+    },
+    {
+      "name": "ticket",
+      "description": "CRUD + lifecycle for project tickets"
+    },
+    {
+      "name": "ticket_board",
+      "description": "View ticket board grouped by status"
+    },
+    {
+      "name": "detect_conflicts",
+      "description": "Detect contradictions in project contexts using NLI"
+    },
+    {
+      "name": "ingest_document",
+      "description": "Ingest documents with AI processing and storage"
+    },
+    {
+      "name": "project_create",
+      "description": "Create a new project with isolated storage"
+    },
+    {
+      "name": "db_query",
+      "description": "Read-only SQL queries against project database"
+    }
+  ],
+  "tags": [
+    "memory",
+    "context",
+    "knowledge-management",
+    "project-management",
+    "tickets",
+    "semantic-search",
+    "ai-agents",
+    "claude",
+    "productivity"
+  ]
+}

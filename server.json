@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
   "name": "ai.stompy/stompy",
   "title": "Stompy – AI Memory for Claude & MCP Agents",
-  "description": "Persistent memory system that prevents context loss between AI sessions. Store, search, and recall project knowledge across conversations. Features semantic search, conflict detection, ticket management, and document ingestion. Works with Claude Desktop, VS Code, Cursor, and any MCP-compatible client.",
+  "description": "Persistent AI memory with semantic search, conflict detection, and ticketing.",
   "version": "1.0.0",
   "repository": {
     "url": "https://github.com/banton/stompy-mcp-server",
